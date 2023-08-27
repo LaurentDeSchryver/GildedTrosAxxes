@@ -129,6 +129,5 @@ class GildedTrosTest {
         }
         assertEquals(0, app.items[0].quality);
         assertEquals(-4, app.items[0].sellIn);
-
     }
 }
