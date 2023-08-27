@@ -19,7 +19,7 @@ class GildedTros {
         } else if (isBackStagePass(item)) {
             updateBackStagePass(item);
         } else if ("B-DAWG Keychain".equals(item.name)) {
-            updateLegendary(item);
+            //do nothing, as no values need to be updated
         } else if (isSmellyItem(item)) {
             updateSmellyItem(item);
         } else {
@@ -49,10 +49,6 @@ class GildedTros {
 
     private int calculateSpeed(Item item) {
         return item.sellIn <= 0 ? 2 : 1;
-    }
-
-    private void updateLegendary(Item item) {
-        //do nothing, as legendary items never get sold or increased/decreased in value
     }
 
     private void updateBackStagePass(Item item) {
